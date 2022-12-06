@@ -1,0 +1,112 @@
+/* Start Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;700;800&family=Lobster&family=Montserrat:wght@300&family=Nunito:wght@300;400;600;700;800&family=Oooh+Baby&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+}
+
+:root {
+  --primary-color: #811538;
+  --second-color: #5b0d25;
+  --border-color: #5b0d25;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+
+.bg-secondary {
+  background-color: var(--second-color) !important;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Rules */
+/* Start Header */
+header {
+  height: 13rem;
+  background: url("./images/pattern.png") no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  background-size: cover;
+  border-bottom: 20px solid var(--border-color);
+  position: relative;
+}
+
+/* End Header */
+/* Start Logo-header */
+.logo-header {
+  position: absolute;
+  width: 7rem;
+  z-index: 999;
+  top: 2.7rem;
+  left: 4rem;
+}
+
+.logo-header img {
+  -webkit-filter: drop-shadow(5px 5px 20px #222222);
+  filter: drop-shadow(5px 5px 20px #222222);
+}
+
+.header__title h1 {
+  font-weight: 800;
+}
+
+.header__title :last-child {
+  font-size: 3rem;
+}
+/* End Logo-header */
+/* Start Qatar World Section */
+.qatar-world .main-title img {
+  width: 19rem;
+}
+
+.flag img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+/* End Qatar World Section */
+/* STart Matches Section */
+.matches__col--first {
+  border-right: 5px solid var(--second-color);
+}
+
+.matches__col--second {
+  border-left: 5px solid var(--second-color);
+}
+/* End Matches Section */
+
+.matches__card {
+  width: 295px;
+}
+
+@media (max-width: 400px) {
+  .list-group-item {
+    padding: 6px;
+  }
+}
