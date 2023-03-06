@@ -1,4 +1,4 @@
-const token = "01589a01eaaa45c2a9a64f973692e731";
+const token = "edfc7395a8474df287b069d5706024de";
 const baseUrl = "https://api.football-data.org/v4/competitions/2000";
 
 function getStandings() {
